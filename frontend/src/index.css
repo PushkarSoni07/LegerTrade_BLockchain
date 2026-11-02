@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg-main: #F0F4FA;
+  --bg-sidebar: #E8EEF8;
+  --bg-card: #FFFFFF;
+  --primary-blue: #3563A6;
+  --soft-blue: #E2ECFF;
+  --teal: #20A896;
+  --soft-teal: #DDF5EF;
+  --purple: #8574D6;
+  --soft-purple: #EEE9FF;
+  --amber: #D99A35;
+  --soft-amber: #FFF2D9;
+  --text-primary: #24344D;
+  --text-secondary: #718096;
+  --border-subtle: #DCE6F5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F0F4FA;
+  color: #24344D;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Sleek Fintech Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F4FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8D6E8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9BB3D3;
+}
+
+/* Clean Fintech Card Panels */
+.fintech-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DCE6F5;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(36, 52, 77, 0.04);
+}
+
+.fintech-card-subtle {
+  background-color: #FFFFFF;
+  border: 1px solid #DCE6F5;
+  border-radius: 0.5rem;
+}
+
+/* 4 Distinct KPI Card Accents */
+.kpi-blue {
+  background: linear-gradient(145deg, #FFFFFF 65%, #F0F5FD 100%);
+  border: 1px solid #CFE0F9;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(53, 99, 166, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.kpi-blue:hover {
+  border-color: #B5D1F7;
+  box-shadow: 0 3px 8px rgba(53, 99, 166, 0.08);
+}
+
+.kpi-teal {
+  background: linear-gradient(145deg, #FFFFFF 65%, #EFFBF8 100%);
+  border: 1px solid #BDECE3;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(32, 168, 150, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.kpi-teal:hover {
+  border-color: #9DE4D5;
+  box-shadow: 0 3px 8px rgba(32, 168, 150, 0.08);
+}
+
+.kpi-purple {
+  background: linear-gradient(145deg, #FFFFFF 65%, #F6F4FF 100%);
+  border: 1px solid #DDD6FB;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(133, 116, 214, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.kpi-purple:hover {
+  border-color: #C7BAF8;
+  box-shadow: 0 3px 8px rgba(133, 116, 214, 0.08);
+}
+
+.kpi-amber {
+  background: linear-gradient(145deg, #FFFFFF 65%, #FFF9EE 100%);
+  border: 1px solid #F9E2BE;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(217, 154, 53, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.kpi-amber:hover {
+  border-color: #F5D399;
+  box-shadow: 0 3px 8px rgba(217, 154, 53, 0.08);
+}
+
+/* Status Badges */
+.badge-green {
+  background-color: #DDF5EF;
+  color: #127568;
+  border: 1px solid #A6E8D9;
+}
+
+.badge-red {
+  background-color: #FEECEB;
+  color: #B91C1C;
+  border: 1px solid #FCC8C5;
+}
+
+.badge-amber {
+  background-color: #FFF2D9;
+  color: #9A6513;
+  border: 1px solid #FCDAA0;
+}
+
+.badge-blue {
+  background-color: #E2ECFF;
+  color: #244C85;
+  border: 1px solid #C4D9FF;
+}
+
+.badge-teal {
+  background-color: #DDF5EF;
+  color: #0E7366;
+  border: 1px solid #A4E8DA;
+}
+
+.badge-purple {
+  background-color: #EEE9FF;
+  color: #5E4CB8;
+  border: 1px solid #D6CCFC;
+}
+
+/* Subtle Table Row Hover */
+.table-row-hover:hover {
+  background-color: #F4F8FD;
+}
